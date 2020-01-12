@@ -40,6 +40,8 @@ gem 'spree_auth_devise', '~> 3.3'
 gem 'spree_gateway', '~> 3.3.0'
 
 gem 'spree_third_party_service_manager', github: 'vinsol-spree-contrib/spree_third_party_service_manager'
+gem 'spree_one_page_stock_management', github: 'vinsol-spree-contrib/spree_one_page_stock_management'
+gem 'spree_multi_domain', github: 'spree-contrib/spree-multi-domain'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
