@@ -1,4 +1,26 @@
 GIT
+  remote: https://github.com/spree-contrib/spree-multi-domain.git
+  revision: d3e6c40962bbac13a2eb04069ed9f78e9edfeea4
+  specs:
+    spree_multi_domain (3.3.1)
+      deface (~> 1.0)
+      paperclip
+      spree_analytics_trackers
+      spree_api (>= 3.1.0, < 5.0)
+      spree_backend (>= 3.1.0, < 5.0)
+      spree_core (>= 3.1.0, < 5.0)
+      spree_extension
+      spree_frontend (>= 3.1.0, < 5.0)
+
+GIT
+  remote: https://github.com/vinsol-spree-contrib/spree_one_page_stock_management.git
+  revision: fee1687915a41dce9e2e2039b3bd7ebc2f8a38f3
+  specs:
+    spree_one_page_stock_management (0.0.1.alpha)
+      spree_core (>= 3.1.0, < 4.0)
+      spree_extension
+
+GIT
   remote: https://github.com/vinsol-spree-contrib/spree_third_party_service_manager.git
   revision: 4e79eee14061e7c018013073471f80065c076931
   specs:
@@ -180,7 +202,7 @@ GEM
       actionmailer (>= 3)
       premailer (~> 1.7, >= 1.7.9)
     public_suffix (3.1.1)
-    puma (3.12.1)
+    puma (3.12.3)
     rabl (0.13.1)
       activesupport (>= 2.3.14)
     rack (2.0.7)
@@ -242,6 +264,11 @@ GEM
       spree_core (= 3.2.9)
       spree_frontend (= 3.2.9)
       spree_sample (= 3.2.9)
+    spree_analytics_trackers (1.1.0)
+      deface (~> 1.0)
+      spree_backend (>= 3.1.0, < 5.0)
+      spree_core (>= 3.1.0, < 5.0)
+      spree_extension
     spree_api (3.2.9)
       rabl (~> 0.13.1)
       spree_core (= 3.2.9)
@@ -357,12 +384,14 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   pg (>= 0.18, < 2.0)
-  puma (~> 3.0)
+  puma (~> 3.12)
   rails (~> 5.0.7, >= 5.0.7.2)
   sass-rails (~> 5.0)
   spree (~> 3.2.7)
   spree_auth_devise (~> 3.3)
   spree_gateway (~> 3.3.0)
+  spree_multi_domain!
+  spree_one_page_stock_management!
   spree_third_party_service_manager!
   spring
   spring-watcher-listen (~> 2.0.0)
